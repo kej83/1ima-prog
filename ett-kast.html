@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="kast()">Kast terning</button>
+    <p></p>
+
+    <script>
+        function kast() {
+            // lager peker til det første p-elementet
+            let txtUt = document.querySelector("p");
+            
+            // Tilfeldig kast
+            // Math.random() -> gir tilfeldig desimaltall fra 0 til 1
+            // Math.ceil() -> runder opp til nærmeste hele tall.
+            // Math.ceil(0.8) -> 1, Math.ceiling(1.2) -> 2
+            let terning = Math.ceil(Math.random() * 6);
+            
+            // HVIS 6, rop "Hurra, du fikk 6-er!"
+            if (terning == 6) {
+                txtUt.textContent = "Hurra, du fikk en 6-er!";
+            } else {
+                txtUt.textContent = `Du fikk bare en ${terning}-er!`;
+            }
+        }
+    </script>
+</body>
+</html>
