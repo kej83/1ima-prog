@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Russisk Rulette 1P mot CPU</h1>
+    <button onclick="skyt()">Spinn og skyt deg selv</button>
+    <p></p>
+    <div id="rundeNrTxt"></div>
+
+    <script>
+        let txtUt = document.querySelector("p");
+        let rundeNrTxt = document.getElementById("rundeNrTxt");
+        let rundeNr = 0;
+        function skyt() {
+            // 0. Oppdater rundenr
+            rundeNr++;
+            rundeNrTxt.textContent = "Rundenr: " + rundeNr;
+            // 1. Spilleren skyter
+            // TODO: Bruk Math.random() og Math.ceiling til å lage
+            // tilfeldig heltall 1-6
+            let tall = TODO
+            
+            // 2. Sjekk om du døde (f.eks at tall er lik 1)
+            if (TODO) {
+                // Skriv ut du er død
+                // Bruk KI til å finne ut hvordan du lager rød bakgrunn, og bare vise teksten "Du er ferdig!" på skjermen
+                TODO 
+                return; // Avslutter funksjonen
+            } else {
+                // 3. Du overlevde, nå er det cpu sin tur
+                let tallCPU = TODO
+                // 4. Sjekk om cpu skjøt seg selv, tallCPU er 1
+                if (TODO) {
+                    // 5. HVIS ja,  skriv ut du vant prinsessen og halve kongeriket!
+                    TODO
+                } else {
+                    // 6. skriv ut begge overlevde, og nå er det ny runde.
+                    TODO
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -11,7 +11,24 @@
 
     <script>
         // TODO: Lag funksjonen
-        
+        function kastToTerninger() {
+            let kastA = Math.ceil(Math.random() * 6);
+            let kastB = Math.ceil(Math.random() * 6);
+
+            let txtUt = document.querySelector("p");
+            // TODO:
+            // HVIS like, rop "Hurra de er like"
+            // ELLERS, rop "sorry, ulike".
+            if (kastA == kastB) {
+                txtUt.textContent = `Du fikk ${kastA} og ${kastB}. 
+                Hurra! De er like!`;
+            } else {
+                txtUt.textContent = `Du fikk ${kastA} og ${kastB}. 
+                Ikke like!`;
+            }
+
+
+        }
     </script>
 </body>
 </html>
